@@ -17,6 +17,9 @@ print("E to Exit.")
 while True:
     choice = input("Enter choice(1/2/3/4/E): ")
 
+    if choice == 'E':
+        break
+
     if choice in ('1','2','3','4','E'):
         try:
             a = float(input("Enter first number: "))
@@ -26,14 +29,12 @@ while True:
             continue
 
         if choice == '1':
-            add(a,b)
+            print(add(a,b))
         if choice == '2':
-            subtract(a,b)
+            print(subtract(a,b))
         if choice == '3':
-            multiply(a,b)
+            print(multiply(a,b))
         if choice == '4':
-            divide(a,b)
-        if choice == 'E':
-            break
+            print(divide(a,b))
     else:
         print("Invalid Input")

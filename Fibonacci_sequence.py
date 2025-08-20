@@ -1,7 +1,3 @@
-"""
-Variables, loops, conditionals, functions, imports, and modules in Python.
-"""
-
 # Function that returns fibonacci numbers up to n
 def fibonacci(n):
     a, b = 0, 1
